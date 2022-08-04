@@ -1,0 +1,2317 @@
+﻿*{
+	margin:0;
+	padding: 0;
+}
+
+/*reset CSS*/
+*, *:after, *:before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* [disabled]font-family: sans-serif; */
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+/*CABEÇALHO*/
+#header{
+	position: relative;
+    width: 1349px;
+	height: 110px;
+	float:left;
+	background-color: #000;
+}
+
+/*logotipo*/
+.logo{
+	position: relative;
+    width: 200px;
+	height: 120px;
+	float:left;
+	margin-left: 50px;
+	background-color: #000;
+}
+
+
+/*Botão de login*/
+.ECbotão{
+	position: relative;
+    width: 50px;
+	height: 50px;
+	float:right;
+	margin-right: 280px;
+	margin-top: 25px;
+	background-color: #000;
+}
+
+/*div que está escrita entre ou cadastre-se*/
+.EC{
+	position: relative;
+    width: 90px;
+	height: 60px;
+	float:left;
+	margin-left: 830px;
+	margin-top: -40px;
+	background-color: #000;
+}
+
+/*carrinho de compra*/
+.carrinho{
+	position: relative;
+    width: 50px;
+	height: 50px;
+	float:left;
+	margin-left: 50px;
+	margin-top: -50px;
+	background-color: #000;
+}
+
+/*BARRA DE PESQUISA*/
+/*caixa de pesquisa*/
+.searchbox input[type="text"] {
+	background: #ffffff;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+    color: #000000;
+    padding: 10px 35px 10px 20px;
+    width: 600px;
+	height: 40px;
+	outline: none;
+	padding: 10px;
+	float:left;
+	margin-left: 110px;
+	margin-top: 35px;
+	border-radius: 5px;
+
+}
+
+/*div e comando que apenas tira o contorno azul da caixa de pesquisa quando é selecionada*/
+.searchbox input{
+	outline:none;
+}
+
+/*botão de pesquisar*/
+.button-submit{
+	background-image:url(../img/lupa.jpg);
+	border-width: 0px;
+	width: 25px; 
+	height: 25px;
+	outline: none;
+	float:left;
+	margin-left: -35px;
+	margin-top: 43px;
+}
+
+
+
+
+
+/*MENU*/
+#mainnav{
+	position: relative;
+    width: 1349px;
+	height: 40px;
+	float:left;
+	background-color: #fff;
+}
+
+/*onde fica as outras categorias principais do menu*/
+.menu{
+	position: relative;
+    width: 800px;
+	height: 35px;
+	float:right;
+	margin-right: 240px;
+	top: 7px;
+	background-color: #FFF;
+}
+
+/*imagem que tem no menu*/
+.imgmenu1{
+	position: relative;
+    width: 250px;
+	height: 130px;
+	float: left;
+	margin-left: -70px;
+}
+.imgmenu2{
+	position: relative;
+    width: 250px;
+	height: 130px;
+	float: left;
+	margin-left: -70px;
+	top: 25px;
+	background-image: url(../img/aaaa.png);
+}
+
+/*botão de todas as categorias*/
+.cd-dropdown-wrapper{
+  	display: inline-block;
+  	position: relative;
+  	height: 40px;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	float: left;
+  	margin-left: 50px;
+}
+
+/*configurações do botão de todas as categorias*/
+.cd-dropdown-trigger{
+  	display: block;
+  	position: relative;
+  	padding: 0 35px 0 20px;
+	top: -15px;
+  	line-height: 40px;
+  	background-color: #fff;
+  	color: #000;
+  	border-radius: 3px;
+}
+
+/*configurações da seta que vira X*/
+.cd-dropdown-trigger::before, .cd-dropdown-trigger::after{
+  	content: '';
+  	position: absolute;
+  	top: 50%;
+  	margin-top: -1px;
+  	height: 2px;
+  	width: 9px;
+  	background: #000;
+  	-webkit-backface-visibility: hidden;
+  	backface-visibility: hidden;
+  	-webkit-transition: width 0.3s, -webkit-transform 0.3s;
+  	-moz-transition: width 0.3s, -moz-transform 0.3s;
+  	transition: width 0.3s, transform 0.3s;
+}
+.cd-dropdown-trigger::before{
+  	right: 22px;
+  	-webkit-transform: rotate(45deg);
+  	-moz-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	-o-transform: rotate(45deg);
+  	transform: rotate(45deg);
+}
+.cd-dropdown-trigger::after{
+  	right: 17px;
+  	-webkit-transform: rotate(-45deg);
+  	-moz-transform: rotate(-45deg);
+  	-ms-transform: rotate(-45deg);
+  	-o-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
+}
+  
+/* tamanho do X */
+.cd-dropdown-trigger.dropdown-is-active::before, .cd-dropdown-trigger.dropdown-is-active::after{
+    width: 14px;
+}
+  
+/*transformar a seta em um X*/
+.cd-dropdown-trigger.dropdown-is-active::before{
+    -webkit-transform: translateX(5px) rotate(-45deg);
+    -moz-transform: translateX(5px) rotate(-45deg);
+    -ms-transform: translateX(5px) rotate(-45deg);
+    -o-transform: translateX(5px) rotate(-45deg);
+    transform: translateX(5px) rotate(-45deg);
+}
+.cd-dropdown-trigger.dropdown-is-active::after{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*espaçamento das palavras das categorias*/
+.cd-dropdown h2,
+.cd-dropdown-content a,
+.cd-dropdown-content ul a,
+.cd-dropdown-content .cd-divider{
+  	padding: 0 20px;
+}
+
+/*faz o submenu aparecer*/
+.cd-dropdown{
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-color: #111433;
+  	color: #ffffff;
+  	visibility: hidden;
+/*Forçar aceleração de hardware*/
+  	-webkit-backface-visibility: hidden;
+ 	backface-visibility: hidden;
+  	-webkit-transform: translateZ(0);
+  	-moz-transform: translateZ(0);
+  	-ms-transform: translateZ(0);
+  	-o-transform: translateZ(0);
+  	transform: translateZ(0);
+  	-webkit-transform: translateY(-100%);
+  	-moz-transform: translateY(-100%);
+  	-ms-transform: translateY(-100%);
+  	-o-transform: translateY(-100%);
+  	transform: translateY(-100%);
+  	-webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0.5s;
+  	-moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
+  	transition: transform 0.5s 0s, visibility 0s 0.5s;
+}
+.cd-dropdown.dropdown-is-active{
+  	visibility: visible;
+  	-webkit-transform: translateY(0);
+  	-moz-transform: translateY(0);
+  	-ms-transform: translateY(0);
+  	-o-transform: translateY(0);
+  	transform: translateY(0);
+  	-webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0s;
+  	-moz-transition: -moz-transform 0.5s 0s, visibility 0s 0s;
+  	transition: transform 0.5s 0s, visibility 0s 0s;
+}
+
+/*limita onde o menu abre*/
+@media only screen and (min-width: 1024px){
+.cd-dropdown{
+    position: absolute;
+    top: 25px;
+/*reset style*/
+    height: auto;
+    width: auto;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    background-color: #ffffff;
+    color: #111433;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s;
+}
+
+/*ocultar a palavra titulo e close*/
+.cd-dropdown h2, .cd-dropdown .cd-close{
+	display: none;
+}
+  
+/*ativa o dropdown do menu*/
+.cd-dropdown.dropdown-is-active{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: opacity 0.3s 0s, visibility 0.3s 0s, -webkit-transform 0.3s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0.3s 0s, -moz-transform 0.3s 0s;
+    transition: opacity 0.3s 0s, visibility 0.3s 0s, transform 0.3s 0s;
+}
+
+/*limita o tamanho entre as categorias*/
+.cd-dropdown-content, .cd-dropdown-content ul{
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	overflow-x: hidden;
+  	overflow-y: auto;
+  	-webkit-transition: -webkit-transform 0.3s;
+  	-moz-transition: -moz-transform 0.3s;
+  	transition: transform 0.3s;
+  	padding-top: 50px;
+}
+
+/*configura a linha vertical que aparece na categoria quando passa o mouse*/
+.cd-dropdown-content a, .cd-dropdown-content ul a{
+  	display: block;
+  	color: #ffffff;
+/*trunca texto com reticências se for muito longo*/
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	border-top-width: 1px;
+  	border-color: #242643;
+  	border-style: solid;
+}
+
+/*não deixar um espaço desnecessário quando abre as categorias*/
+@media only screen and (min-width: 1024px) {
+.cd-dropdown-content, .cd-dropdown-content ul{
+    padding-top: 0;
+    overflow: visible;
+}
+  
+/* adicionar um espaço entre as categorias*/
+.cd-dropdown-content a, .cd-dropdown-content ul a{
+    color: #111433;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    border-color: #ebebeb;
+}
+
+/*faz com que as categorias fique em seus lugares*/
+@media only screen and (min-width: 1024px){
+.cd-dropdown-content{
+    position: static;
+    height: auto;
+    width: 250px;
+}
+.cd-dropdown-content .cd-secondary-dropdown, .cd-dropdown-content .cd-dropdown-gallery, .cd-dropdown-content .cd-dropdown-icons{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    left: 100%;
+    height: 330px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+}
+ 
+/*faz com que as subcategorias apareçam do lado das categorias*/
+.cd-dropdown-content .cd-secondary-dropdown.is-hidden, .cd-dropdown-content .cd-dropdown-gallery.is-hidden, .cd-dropdown-content .cd-dropdown-icons.is-hidden{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+  
+/*coloca em ordem os blocos de subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown > .go-back, .cd-dropdown-content .cd-dropdown-gallery > .go-back, .cd-dropdown-content .cd-dropdown-icons > .go-back{
+    display: none;
+}
+  
+/*limita o tamanho do box com o link abaixo das subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown > .see-all, .cd-dropdown-content .cd-dropdown-gallery > .see-all, .cd-dropdown-content .cd-dropdown-icons > .see-all{
+    position: absolute;
+    bottom: 20px;
+    height: 45px;
+    text-align: center;
+}
+  
+/*ocultar as linhas que separam cada subcategoria*/  
+.cd-dropdown-content .cd-secondary-dropdown .cd-dropdown-item, .cd-dropdown-content .cd-secondary-dropdown a, .cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item, .cd-dropdown-content .cd-dropdown-gallery a, .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item, .cd-dropdown-content .cd-dropdown-icons a{
+    border: none;
+}
+  
+/*coloca um box de categoria ao lado do outro para não ficar um embaixo do outro*/
+.cd-dropdown-content .cd-dropdown-icons > li, .cd-dropdown-content .cd-secondary-dropdown > li{
+    width: 50%;
+    float: left;
+}
+  
+/*tamanho do box das subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown{
+    overflow: hidden;
+    width: 480px;
+    padding-bottom: 65px;
+}
+    
+/*configura o titulo das subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown > li > a{
+    color: #000;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    line-height: 30px;
+    height: 30px;
+    pointer-events: none;
+	font-family: 'Red Hat Display', sans-serif;
+	font-weight: bold;
+}
+  
+/*faz com que a seta não apareça no titulo das subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown > li > a::after, .cd-dropdown-content .cd-secondary-dropdown > li > a::before{
+    display: none;
+}
+  
+/*linha horizontal que aparece nas  subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown > li{
+    margin: 20px 0;
+    border-right-width: 1px;
+    border-color: #fff;
+    border-style: solid;
+    padding: 0 30px;
+    height: 110px;
+}
+  
+/*faz o conteudo das subcategorias aparecerem*/
+.cd-dropdown-content .cd-secondary-dropdown > li > ul{
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+    position: relative;
+    height: auto;
+}
+  
+/*ocultar a seta de lugares que ela não deve aparecer*/
+.cd-dropdown-content .cd-secondary-dropdown > li > ul > .go-back{
+    display: none;
+}
+  
+/*espaço entre as linhas das subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown a{
+    line-height: 25px;
+    height: 25px;
+    font-size: 1.3rem;
+    padding-left: 0;
+}
+  
+/*faz com que as subcategorias apareçam no lugar certo*/
+.cd-dropdown-content .cd-secondary-dropdown ul{
+    padding-bottom: 25px;
+    overflow: hidden;
+    height: auto;
+}
+  
+/*faz o link de todos os produtos de determinada subcategoria aparecer embaixo*/  
+.cd-dropdown-content .cd-secondary-dropdown .see-all{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+   
+/*faz com que as subcategorias fiquem visiveis*/
+.cd-dropdown-content > .has-children > ul{
+    visibility: hidden;
+}
+  
+/*quando passar o mouse sobre itens de conteúdo suspenso mostrar subnavegação*/
+  .cd-dropdown-content > .has-children > ul.is-active{
+    visibility: visible;
+}
+  
+/*se o dropdown secundário estiver visível mostra também subnavegação*/
+.cd-dropdown-content > .has-children > .cd-secondary-dropdown.is-active > li > ul{
+    visibility: visible;
+}
+  
+/*efeito de passar o mouse para itens com conteúdo suspenso com subnavegação*/
+.cd-dropdown-content > .has-children > a.is-active{
+    box-shadow: inset 2px 0 0 #000;
+    color: #000;
+}
+  
+/*cor da seta das subcategorias quando passa o mouse*/
+.cd-dropdown-content > .has-children > a.is-active::before, .cd-dropdown-content > .has-children > a.is-active::after{
+    background: #000;
+}
+
+/*posição da seta que fica nas subcategorias*/
+.has-children > a, .go-back a{
+  	position: relative;
+}
+
+/*faz a seta que fica nas subcategorias aparecer*/
+.has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after{
+  	content: '';
+  	position: absolute;
+  	top: 50%;
+  	margin-top: -1px;
+  	display: inline-block;
+  	height: 2px;
+  	width: 10px;
+  	background: #fff;
+  	-webkit-backface-visibility: hidden;
+  	backface-visibility: hidden;
+}
+
+/*estilo da seta*/
+.has-children > a::before, .go-back a::before{
+  	-webkit-transform: rotate(45deg);
+  	-moz-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	-o-transform: rotate(45deg);
+  	transform: rotate(45deg);
+}
+.has-children > a::after, .go-back a::after{
+  	-webkit-transform: rotate(-45deg);
+  	-moz-transform: rotate(-45deg);
+  	-ms-transform: rotate(-45deg);
+  	-o-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
+}
+
+/*cor da seta das subcategorias*/
+@media only screen and (min-width: 1024px){
+.has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after{
+    background: #CCC;
+}}
+
+/*faz a seta da subcategoria ficar do lado direito*/
+.has-children > a::before, .has-children > a::after{
+  	right: 20px;
+  	-webkit-transform-origin: 9px 50%;
+  	-moz-transform-origin: 9px 50%;
+  	-ms-transform-origin: 9px 50%;
+ 	o-transform-origin: 9px 50%;
+  	transform-origin: 9px 50%;
+}
+
+/*CONTEUDO*/
+/*usado em todas as paginas*/
+#contents{
+	position: relative;
+    width: 1349px;
+	height: 800px;
+	top: -15px;
+	float:left;
+	background-color: #fff;
+}
+
+/*usado em politica de privacidade e segurança*/
+#contents2{
+	position: relative;
+    width: 1349px;
+	height: 630px;
+	top: -15px;
+	float:left;
+	background-color: #fff;
+}
+
+/*usado em envio e entrega*/
+#contents3{
+	position: relative;
+    width: 1349px;
+	height: 1130px;
+	top: -15px;
+	float:left;
+	background-color: #fff;
+}
+
+/*usado em troca e arrependimento*/
+#contents4{
+	position: relative;
+    width: 1349px;
+	height: 1570px;
+	top: -15px;
+	float:left;
+	background-color: #fff;
+}
+
+/*usado em ofertas*/
+#contents5{
+	position: relative;
+    width: 1349px;
+	height: 1950px;
+	top: -15px;
+	float:left;
+	background-color: #fff;
+}
+
+/*usado em cartão presente*/
+#contents6{
+	position: relative;
+    width: 1349px;
+	height: 1370px;
+	top: -15px;
+	float:left;
+	background-color: #fff;
+}
+
+/*SLIDESHOW*/
+.slideshow-container{
+    max-width: 1349px;
+    position: relative;
+    margin: auto
+}
+
+.mySlides{
+  	display: none;
+  	height: 490px;
+}
+
+.prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next{
+    right: 0px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev{
+    left: 0px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover{
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover{
+    background-color: #717171
+}
+
+
+/*espaço que esta localizado o resto do conteudo*/
+.conteudo{
+	position: relative;
+    width: 1349px;
+	height: 1800px;
+	float:left;
+	top: -250px;
+	background-color:#FFF;
+}
+
+/*titulo do "chegou na DRI-FIT", "na DRI-FIT tem", "compre o look" e "confira também"*/
+.titulo{
+	position: relative;
+    width: 1349px;
+	height: 70px;
+	float:left;
+	background-color:#fff;
+}
+
+/*"chegou na DRI-FIT" (imagem maior)*/
+.img1{
+	position: relative;
+    width: 350px;
+	height: 500px;
+	float:left;
+	margin-left: 80px;
+	background-image: url(../img/img1.jpg);
+}
+
+/*"chegou na DRI-FIT" (outras imagens)*/
+.img2{
+	position: relative;
+    width: 800px;
+	height: 263px;
+	float:right;
+	margin-right: 80px;
+	background-color:#FFF;
+}
+
+/*bolinhas do "na DRI-FIT também tem"*/
+.bolinha{
+	position: relative;
+    width: 150px;
+	height: 200px;
+	float:left;
+	margin-left: 60px;
+	top: -20px;
+}
+
+/*onde está inserida a imagem de corpo do "compre o look"*/
+.corpo{
+	position: relative;
+    width: 200px;
+	height: 620px;
+	float:left;
+	margin-left: 100px;
+	background-color: #fff;
+    opacity:0.5;
+}
+
+/*hover do corpo que fica em destaque quando passa o mouse*/
+.corpo:hover{
+    opacity:1;
+}
+
+/*box onde está inserido todas as caixinhas com as descrições do "compre o look"*/
+.look{
+	position: relative;
+     width: 180px;
+	height: 400px;
+	opacity:0.0;
+	float:left;
+	margin-left: 60px;
+	top: -470px;
+}
+
+/*hover de está inserido todas as caixinhas com as descrições do "compre o look" que aparece quando passa o mouse*/
+.look:hover{
+	opacity:1;
+	position: relative;
+}
+
+/*caixinha de descrição do "compre o look"*/
+.caixinha{
+	position: relative;
+    width: 170px;
+	height: 55px;
+	border-radius: 7px;
+	padding: 5px;
+	background-color: #fff;
+	box-shadow: 1px 1px 1px #EEE9E9;
+
+}
+
+/*botão de conferir look*/
+.CL{
+	position: relative;
+    width: 170px;
+	height: 45px;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #F58426;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.CL:hover{
+    background: #F60;
+}
+
+/*onde esta inserida a imagem de cada parte da roupa*/
+.PC{
+	position: relative;
+    width: 100px;
+	height: 120px;
+	border-radius: 5px;
+	float:left;
+	margin-left: 50px;
+	top:25px;
+}
+
+/*onde esta a descrição de cada parte da roupa*/
+.PC1{
+	position: relative;
+    width: 420px;
+	height: 135px;
+	float:left;
+	margin-left: 30px;
+	top:25px;
+}
+
+/*botão comprar*/
+.PC2{
+	position: relative;
+    width: 300px;
+	height: 60px;
+	float:left;
+	margin-left: 310px;
+	top: 20px;
+}
+
+/*parte de parcela*/
+.PC3{
+	position: relative;
+    width: 250px;
+	height: 50px;
+	float:left;
+	margin-left: 40px;
+	top: -40px;
+}
+
+/*Modal CSS*/
+/*define as caracteristicas do botão de fechar*/
+.w3-btn,.w3-button{
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap
+}
+
+/*cor do botão de fechar*/
+.w3-red,.w3-hover-red:hover{
+	color:#fff;
+	background-color:#f44336;
+}
+  
+/*define a posição do botão de fechar*/
+.w3-display-topleft{
+	position:absolute;
+	left:0;
+	top:0;
+}
+.w3-display-topright{
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+/*tamanho do botão de fechar*/
+.w3-xlarge{
+	font-size:24px;
+}
+.w3-xxlarge{
+	font-size:36px;
+}
+
+/*faz com que a pagina só apareça quando clica no botão*/
+.w3-modal{
+	z-index:3;
+	display:none;
+	padding-top:40px;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow:auto;
+	background-color:rgb(0,0,0);
+	background-color:rgba(0,0,0,0.4);
+}
+
+/*onde a div inteira abre*/
+.w3-modal-content{
+	margin:auto;
+	background-color:#fff;
+	position:relative;
+	padding:0;
+	outline:0;
+	width:600px;
+}
+
+/*animação de quando abre a página*/
+.w3-animate-zoom{
+	animation:animatezoom 0.6s;
+}
+@keyframes animatezoom{
+from{
+	transform:scale(0);
+} 
+to{
+	transform:scale(1);
+}}
+
+/*centraliza o titulo*/
+.w3-center{
+	text-align:center;
+}
+
+/*margem da lateral*/
+.w3-padding{
+	padding:8px 16px;
+}
+
+/*margem debaixo*/
+.w3-padding-16{
+	padding-top:16px;
+	padding-bottom:16px;
+}
+
+
+/*imagens que ficam antes do rodapé*/
+.img3{
+	position: relative;
+    width: 400px;
+	height: 450px;
+	float:left;
+	margin-left: 30px;
+	background-color:#FFF;
+}
+
+
+/*RODAPÉ*/
+#footer{
+	position: relative;
+    width: 1349px;
+	height: 270px;
+	float:left;
+	padding: 20px;
+	background-color: #000;
+}
+
+/*caixa de informações sobre entrega e pagamento*/
+.caixa{
+	position: relative;
+    width: 1349px;
+	height: 60px;
+	float:left;
+	top: -11px;
+	background-color: #000;
+}
+
+/*coluna 1 do rodapé (formas de pagamento e certificações)*/
+.rodapé1{
+	position: relative;
+    width: 300px;
+	height: 200px;
+	float:left;
+	margin-left: 50px;
+	background-color: #000;
+}
+
+/*coluna 2 do rodapé (institucional e ajuda)*/
+.rodapé2{
+	position: relative;
+    width: 300px;
+	height: 200px;
+	float:left;
+	margin-left: 490px;
+	top: -170px;
+	background-color: #000;
+}
+
+/*coluna 3 do rodapé (cartão presente, redes sociais e app)*/
+.rodapé3{
+	position: relative;
+    width: 310px;
+	height: 200px;
+	float:left;
+	margin-left: 400px;
+	top: -210px;
+	background-color: #000;
+}
+
+/*texto do copyright*/
+.rodapé4{
+	position: relative;
+    width: 1349px;
+	height: 60px;
+	float:left;
+	top: 1px;
+	padding: 10px;
+	background-color: #000;
+}
+
+/*redes sociais*/
+.facebook{
+	position: relative;
+    width: 35px;
+	height: 35px;
+	float:left;
+	top: 5px;
+	border-radius: 40px;
+	background-image: url(../img/facebook.jpg)
+}
+.facebook:hover{
+	background-image: url(../img/facebookH.jpg)
+}
+
+.instagram{
+	position: relative;
+    width: 35px;
+	height: 35px;
+	float:left;
+	margin-left: 15px;
+	top: 5px;
+	border-radius: 40px;
+	background-image: url(../img/instagram.jpg)
+}
+.instagram:hover{
+	background-image: url(../img/instagramH.jpg)
+}
+
+.twitter{
+	position: relative;
+    width: 35px;
+	height: 35px;
+	float:left;
+	margin-left: 15px;
+	top: 5px;
+	border-radius: 40px;
+	background-image: url(../img/twitter.jpg)
+}
+.twitter:hover{
+	background-image: url(../img/twitterH.jpg)
+}
+
+/*INSTITUCIONAIS*/
+/*politica de privacidade*/
+.PdP{
+	position: relative;
+    width: 1000px;
+	height: 500px;
+	float:right;
+	margin-right: 70px;
+	padding: 20px;
+	text-align:justify;
+}
+
+.PdPimg{
+	position: relative;
+    width: 200px;
+	height: 500px;
+	float:left;
+	margin-left: 70px;
+	background-image: url(../img/Pol%C3%ADtica-de-privacidade.jpg);
+}
+
+/*Envio e entrega e politica de trocas a arrependimento*/
+.EeE{
+	position: relative;
+    width: 1250px;
+	height: 700px;
+	float:left;
+	margin-left: 50px;
+	padding: 20px;
+	text-align:justify;
+}
+
+/*Sobre e segurança*/
+.S{
+	position: relative;
+    width: 1000px;
+	height: 300px;
+	float:right;
+	margin-right: 70px;
+	padding: 20px;
+	text-align:justify;
+}
+
+/*sobre imagem de lampada*/
+.Simg{
+	position: relative;
+    width: 200px;
+	height: 200px;
+	float:left;
+	margin-left: 70px;
+	top: 50px;
+	background-image: url(../img/Sobre.jpg);
+}
+
+/*segunraça imagem de sirene*/
+.Seimg{
+	position: relative;
+    width: 200px;
+	height: 200px;
+	float:left;
+	margin-left: 60px;
+	top: 20px;
+	background-image: url(../img/segurança.jpg);
+}
+	
+/*botão de voltar para o topo*/
+p{
+	display: block; 
+	height: 1500px;
+}
+
+#myBtn{
+  	display: none;
+  	position: fixed;
+  	bottom: 10px;
+  	right: 10px;
+  	z-index: 0;
+  	border: none;
+  	outline: none;
+  	background-color: #000;
+  	cursor: pointer;
+  	border-radius: 100px;
+  	height: 57px;
+  	opacity: 0.7;
+}
+
+#myBtn:hover{
+  	opacity: 1;
+}
+
+
+
+
+
+/*PÁGINA DE CATEGORIA*/
+/*banner*/
+.bannercategoria{
+	position: relative;
+    width: 1349px;
+	height: 200px;
+	float:left;
+}
+
+/*onde esta todos os produtos*/
+.produtos{
+	position: relative;
+    width: 1165px;
+	height: 500px;
+	float:left;
+	top: 50px;
+	margin-left: 100px;
+}
+
+/*carrinho que aparece quando passa o mouse*/
+.C{
+	position: relative;
+    width: 50px;
+	height: 50px;
+	float:left;
+	margin-left: 189px;
+	background-image:url(../img/c.jpg);
+	border-top-left-radius: 50px;
+	top: 30px;
+}
+.C:hover{
+    background:#53a7ea;
+	background-image:url(../img/c2.jpg);
+	transition:all 0.1s linear;
+	
+}
+
+/*imagem que aparece quando passa o mouse*/
+.img{
+	position: relative;
+    width: 260px;
+	height: 300px;
+	float:left;
+	margin-left: -21px;
+	top: 67px;
+	background-color: #fff;
+	border-top:solid #CCC 1px;
+	border-right:solid #CCC 1px;
+	border-left:solid #CCC 1px;
+}
+
+/*tamanho de toda a div que agrupa as informações do produto*/
+.produto{
+	position: relative;
+    width: 260px;
+	height: 440px;
+	float:left;
+	margin-left: 25px;
+	background-color: #fff;
+	border:solid #CCC 1px;
+}
+
+/*Carecteristicas de tudo que esta dentro da Div e com Link*/
+.produto ul li a{
+	display:block;
+	position:relative;
+	font-size:12px;
+	margin:0 auto;
+	float:left;
+}
+
+/*Efeitos do texto*/
+.produto ul li a span{
+	display:block;
+	padding:10px;
+	color:#f00;
+	position:absolute;
+	bottom:0;
+	left:0;
+	-webkit-border-radius:0 0 5px 5px;
+	-moz-border-radius:0 0 5px 5px;
+	border-radius:0 0 5px 5px;
+	opacity:0;
+	-moz-opacity:0;
+	filter:alpha(opacity=0);
+	transition:all 0.3s linear;
+}
+
+/*Efeitos do texto quando o mouse estive em cima da Imagem*/ 
+.produto ul li:hover span{
+	border: 1px solid f00;
+	opacity:1;
+	-moz-opacity:1;
+	filter:alpha(opacity=100);
+}
+
+/*Tamanho da imagem na DIV*/
+.produto ul li a img{ 
+	width:258px;
+	height:300px;
+}
+
+/*Espaço da mensagem que ira aparecer*/
+.produto ul li a span{ 
+	width:300px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+/*espaço entre os produtos e o rodapé*/
+.espaço{
+	position: relative;
+    width: 1349px;
+	height: 80px;
+	float:left;
+}
+
+
+
+
+
+/*PÁGINA INDIVIDUAL*/
+/*parte que fica o nome do produto*/
+.nomeproduto{
+	position: relative;
+    width: 330px;
+	height: 600px;
+	float:left;
+	margin-left: 50px;
+	top: 55px;
+	text-align: left;
+}
+
+/*zoom*/
+.zoom{
+	position: relative;
+    width: 400px;
+	height: 600px;
+	float:left;
+	margin-left: 50px;
+	top: 55px;
+}
+
+/*parte onde fica o zoom*/
+.container{
+	width: 600px;
+	margin: 0 auto;
+	padding: 2em 2em 4em;
+}
+
+.thumbnails{
+	overflow: hidden;
+	margin: 1em 0;
+	padding: 0;
+	text-align: center;
+}
+
+/*tamanho da imagem menor*/
+.thumbnails li{
+	display: inline-block;
+	width: 80px;
+	margin: 0 5px;
+	border: solid 1px #D3D3D3;
+	border-radius: 5px;
+}
+.thumbnails img{
+	display: block;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+/*Estilos principais do EasyZoom*/
+/*tamanho da imagem quando da zoom*/
+.easyzoom{
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.easyzoom-flyout{
+	position:absolute;
+	z-index: 100;
+	overflow: hidden;
+	background: #FFF;
+}
+
+/*cursor do mouse*/
+.easyzoom.is-ready img{
+	cursor: crosshair;
+}
+.easyzoom.is-error  img{
+	cursor: not-allowed;
+}
+
+/*esconde uma mensagem para não aparecer quando atualiza a página*/
+.easyzoom-notice{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 150;
+	width: 10em;
+	margin: -1em 0 0 -5em;
+	line-height: 2em;
+	text-align: center;
+	background: #FFF;
+	box-shadow: 0 0 10px #888;
+}
+
+/*Variações de layout do EasyZoom*/
+.easyzoom--overlay .easyzoom-flyout{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.easyzoom--adjacent .easyzoom-flyout{
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	margin-left: 20px;
+}
+
+/*informações de preço e tamanho*/
+.PeT{
+	position: relative;
+    width: 350px;
+	height: 300px;
+	float:right;
+	margin-right: 50px;
+	top: -680px;
+}
+
+/*botão de tamanho do produto*/
+.medida{
+	position: relative;
+    width: 55px;
+	height: 25px;
+	float:left;
+	margin-left: 10px;
+	border: solid 1px #CCC;
+}
+.medida:hover{
+	border: solid 1px #000;
+	transition:all 0.1s linear;
+	cursor: pointer;
+}
+
+/*botão de tamanho do produto quando é clicado*/
+.medida2:focus{
+  	color: red;
+  	outline: none;
+  	position: relative;
+    width: 55px;
+	height: 25px;
+	float:left;
+	border: solid 1px #000;
+}
+
+/*tabela de medida*/
+.fita{
+	position: relative;
+    width: 200px;
+	height: 20px;
+	float:right;
+	margin-right: 145px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+	background-image:url(../img/Fita.jpg);
+	background-repeat: no-repeat;
+}
+
+/*onde fica todo o conteudo*/
+.tudo{
+	position: relative;
+    width: 600px;
+	height:420px;
+	float:left;
+	padding: 30px;
+	background-color: #fff;
+}
+
+/*bloquinhos com as numerações*/
+.tabela2{
+	position: relative;
+    width: 170px;
+	height: 30px;
+	padding: 5px;
+	border-bottom: 1px solid #000;
+}
+
+/*parte de tamanho da tabela*/
+.tabelaT{
+	position: relative;
+    width: 170px;
+	height:180px;
+	float:left;
+	margin-left: 10px;
+	border: 1px solid #000;
+}
+
+/*parte de largura da tabela*/
+.tabelaL{
+	position: relative;
+    width: 170px;
+	height:180px;
+	float:left;
+	border: 1px solid #000;
+	background-color: #fff;
+}
+.tabelaL:hover{
+	background: #E8E8E8;
+	transition:all 0.1s linear;
+}
+
+/*imagem que aparece quando passa o mouse (largura) - calçados maculino, feminino e infantil*/
+.FT1{
+  	background-image: url(../img/p%C3%A9.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -180px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.FT1{
+  	display: none;
+}
+.tabelaL:hover .FT1{
+  	display: block;
+}
+
+/*parte de comprimento da tabela*/
+.tabelaC{
+	position: relative;
+    width: 170px;
+	height:180px;
+	float:left;
+	border: 1px solid #000;
+	background-color: #fff;
+}
+.tabelaC:hover{
+	background: #E8E8E8;
+	transition:all 0.1s linear;
+}
+
+/*imagem que aparece quando passa o mouse (comprimento) - calçados maculino, feminino e infantil*/
+.FT2{
+  	background-image: url(../img/p%C3%A92.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -350px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.FT2{
+  	display: none;
+}
+.tabelaC:hover .FT2{
+  	display: block;
+}
+
+/*imagem que aparece quando passa o mouse (cintura) - masculino*/
+.BM1{
+  	background-image: url(../img/cintura%20masculina.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -180px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.BM1{
+  	display: none;
+}
+.tabelaL:hover .BM1{
+  	display: block;
+}
+
+/*imagem que aparece quando passa o mouse (quadril) - masculino*/
+.BM2{
+  	background-image: url(../img/quadril%20masculino.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -350px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.BM2{
+  	display: none;
+}
+.tabelaC:hover .BM2{
+  	display: block;
+}
+
+/*imagem que aparece quando passa o mouse (tórax) - masculino*/
+.CM1{
+  	background-image: url(../img/torax%20masculino.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -180px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.CM1{
+  	display: none;
+}
+.tabelaL:hover .CM1{
+  	display: block;
+}
+
+/*imagem que aparece quando passa o mouse (cintura) - masculino*/
+.CM2{
+  	background-image: url(../img/cintura%20masculina.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -350px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.CM2{
+  	display: none;
+}
+.tabelaC:hover .CM2{
+  	display: block;
+}
+
+/*imagem que aparece quando passa o mouse (cintura) - feminino*/
+.CF1{
+  	background-image: url(../img/cintura%20feminina.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -180px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.CF1{
+  	display: none;
+}
+.tabelaL:hover .CF1{
+  	display: block;
+}
+
+/*imagem que aparece quando passa o mouse (quadril) - feminino*/
+.CF2{
+  	background-image: url(../img/quadril%20feminino.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -350px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.CF2{
+  	display: none;
+}
+.tabelaC:hover .CF2{
+  	display: block;
+}
+
+/*imagem que aparece quando passa o mouse (busto) - feminino*/
+.BF2{
+  	background-image: url(../img/busto.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -350px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.BF2{
+  	display: none;
+}
+.tabelaC:hover .BF2{
+  	display: block;
+}
+
+/*imagem que aparece quando passa o mouse (quadril) - calças infantil*/
+.CI1{
+  	background-image: url(../img/quadril%20infantil.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -180px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.CI1{
+  	display: none;
+}
+.tabelaL:hover .CI1{
+  	display: block;
+}
+
+/*imagem que aparece quando passa o mouse (cintura) - infantil*/
+.CI2{
+  	background-image: url(../img/cintura%20infantil.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -350px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.CI2{
+  	display: none;
+}
+.tabelaC:hover .CI2{
+  	display: block;
+}
+
+/*imagem que aparece quando passa o mouse (torax) - infantil*/
+.TI1{
+  	background-image: url(../img/torax%20infantil.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+  	width: 520px;
+  	height: 200px;
+  	position: absolute;
+  	margin-left: -180px;
+  	top: 200px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.TI1{
+  	display: none;
+}
+.tabelaL:hover .TI1{
+  	display: block;
+}
+
+/*onde esta a parte que fica escondida quando passa o mouse e aparece a imagem do pé*/
+.instrução{
+	position: relative;
+    width: 510px;
+	height:30px;
+	float:left;
+	margin-left: -150px;
+	top: 20px;
+}
+	
+/*parte que esta o botão de comprar das páginas que tem tabela de medidas*/
+.PeT2{
+	position: relative;
+    width: 350px;
+	height: 200px;
+	float:right;
+	margin-right: 50px;
+	padding: 10px;
+	top: -500px;
+}
+
+/*parte que esta o botão de comprar que não tem tabela de medidas*/
+.PeT3{
+	position: relative;
+    width: 350px;
+	height: 200px;
+	float:right;
+	margin-right: 50px;
+	padding: 10px;
+	top: -542px;
+}
+
+/*botão de comprar*/
+.CP{
+	position: relative;
+    width: 260px;
+	height: 45px;
+	float:left;
+	background-color: #F58426;
+	border: solid 1px #FF6633;
+	border-radius: 5px;
+	padding: 5px;
+	outline: none;
+	cursor: pointer;
+}
+.CP:hover{
+	background: #F60;
+	transition:all 0.1s linear;
+}
+
+/*formas de pagamento*/
+.espaço{
+	position: relative;
+    width: 470px;
+	height: 140px;
+	float:left;
+	padding: 20px;
+	background-color: #FFF;
+}
+
+.formas{
+	position: relative;
+    width: 132px;
+	height: 70px;
+	float:left;
+	margin-left: 22px;
+	top: 20px;
+	background-color: #FFF;
+	border: solid 1px #CCC;
+	outline: none;
+	cursor: pointer;
+}
+.formas:hover{
+	background: #D3D3D3;
+	transition:all 0.1s linear;
+}
+
+.formas2{
+	position: relative;
+    width: 130px;
+	height: 70px;
+	float:left;
+	top: 20px;
+	background-color: #FFF;
+	border: solid 1px #CCC;
+	outline: none;
+	cursor: pointer;
+}
+.formas2:hover{
+	background: #D3D3D3;
+	transition:all 0.1s linear;
+}
+
+/*configura a lista de opções da quantidade de produtos*/
+select{
+	outline: none;
+	height: 30px;
+	width: 80px;
+	cursor: pointer;
+}
+option{
+	font-size:16px;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+/*botão de adicionar ao carrinho*/
+.addcarrinho{
+	position: relative;
+    width: 200px;
+	height: 20px;
+	float:right;
+	margin-right: 100px;
+	top: 5px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+
+/*linha que fica embaixo do botão comprar*/
+.hr{
+	position: relative;
+    width: 350px;
+	height: 1px;
+	top: 20px;
+	background-color: #D3D3D3;
+}
+
+/*espaço da descrição*/
+#descrição{
+	position: relative;
+    width: 580px;
+	height: 800px;
+	float:right;
+	margin-right: 700px;
+	top: 670px;
+	padding: 10px;
+	text-align:justify;
+}
+
+/*prodoutos similares*/
+.PS{
+	position: relative;
+    width: 600px;
+	height: 500px;
+	float:right;
+	margin-right: 45px;
+	top: -120px;
+}
+
+/*onde esta os produtos do "você também pode gostar"*/
+.produtos2{
+	position: relative;
+    width: 1165px;
+	height: 500px;
+	float:left;
+	top: -80px;
+	margin-left: 100px;
+}
+
+
+/*CARRINHO DE COMPRA*/
+/*onde esta o nome dos produtos*/
+#itens{
+	position: relative;
+    width: 530px;
+	height: 510px;
+	float:left;
+	margin-left: 100px;
+	top: 10px;
+	line-height: 70px;
+	font-size:16px;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+/*onde esta a quantidade*/
+#quantidade{
+	position: relative;
+    width: 100px;
+	height: 800px;
+	float:left;
+	padding: 10px;
+	text-align:center;
+	line-height: 70px;
+	font-size:16px;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+/*onde esta o valor primario do produto*/
+#resultado{
+	position: relative;
+    width: 110px;
+	height: 800px;
+	float:left;
+	padding: 10px;
+	text-align:center;
+	line-height: 70px;
+	font-size:16px;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+/*valor total de todos os produtos juntos*/
+#valortotal{
+	position: relative;
+    width: 330px;
+	height: 350px;
+	float:left;
+	margin-left: 70px;
+	top: 20px;
+	border: 1px solid #000;
+	border-radius: 8px;
+	padding: 20px;
+	font-size:20px;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+/*botão de limpar o carrinho*/
+.limparcarrinho{
+	position: relative;
+    width: 200px;
+	height: 20px;
+	float:right;
+	margin-right: 50px;
+	top: 50px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+
+/*botão de finalizar comprar*/
+.FC{
+	position: relative;
+    width: 260px;
+	height: 45px;
+	float:right;
+	margin-right: 15px;
+	top: 40px;
+	background-color: #F58426;
+	border: solid 1px #FF6633;
+	border-radius: 5px;
+	padding: 5px;
+	outline: none;
+	cursor: pointer;
+}
+.FC:hover{
+	background: #F60;
+	transition:all 0.1s linear;
+}
+
+/*onde fica o compra segura*/
+.comprasegura{
+	position: relative;
+    width: 340px;
+	height: 50px;
+	float:right;
+	margin-right: 110px;
+	top: 30px;
+	background-image:url(../img/cadeado.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+/*OFERTAS*/
+/*banner de black friday*/
+.banneroferta{
+	position: relative;
+    width: 1200px;
+	height: 360px;
+	float:left;
+	margin-left: 70px;
+	top: 60px;
+}
+
+/*imagens dos tênis*/
+.img4{
+	position: relative;
+    width: 380px;
+	height: 380px;
+	float:left;
+	margin-left: 70px;
+	top: 10px;
+}
+.img5{
+	position: relative;
+    width: 380px;
+	height: 430px;
+	float:left;
+	margin-left: 30px;
+	top: 10px;
+}
+
+/*bolinhas que tem as marcas*/
+.marcas{
+	position: relative;
+    width: 160px;
+	height: 180px;
+	float:left;
+	margin-left: 55px;
+}
+				
+/*CARTÃO PRESENTE*/
+.bannerCP{
+	position: relative;
+    width: 1200px;
+	height: 400px;
+	float:left;
+	margin-left: 80px;
+	top: 30px;
+	background-color: #F58426;
+}
+
+/*onde esta todos os cartões*/
+.bannerCP2{
+	position: relative;
+    width: 1250px;
+	height: 400px;
+	float:left;
+	margin-left: 50px;
+	top: 100px;
+}
+
+/*cada cartão*/
+.cartão{
+	position: relative;
+    width: 280px;
+	height: 300px;
+	float:left;
+	margin-left: 30px;
+	top: 40px;
+}
+
+/*texto sobre o cartão presente*/
+.cartãopresente{
+	position: relative;
+    width: 1200px;
+	height: 160px;
+	float:left;
+	margin-left: 80px;
+	top: 100px;
+}
+
+/*bolinhas com os simbolos*/
+.imgbeneficios{
+	position: relative;
+    width: 100px;
+	height: 300px;
+	float:left;
+	margin-left: 65px;
+	top: 100px;
+}
+
+/*sobre o cartão presente*/
+.beneficios{
+	position: relative;
+    width: 470px;
+	height: 300px;
+	float:left;
+	top: 100px;
+	text-align: justify;
+}
+
+/*BAIXE O APP*/
+.app{
+	position: relative;
+    width: 1200px;
+	height: 170px;
+	float:left;
+	margin-left: 80px;
+	top: 30px;
+	text-align: center;
+}
+
+.beneficios2{
+	position: relative;
+    width: 530px;
+	height: 130px;
+	float:left;
+	margin-left: 100px;
+	top: 70px;
+	text-align: justify;
+}
+
+.beneficios3{
+	position: relative;
+    width: 120px;
+	height: 170px;
+	float:left;
+}
+
+/*SELETORES DAS FONTES*/
+/*usado em entre ou cadastre-se*/
+p1{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;	
+}
+
+/*usado no menu para as demais categorias do menu principal*/
+p9{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 18px;
+	color: #666;
+}
+p9:hover{
+	color: #000;  
+}
+
+p10{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 18px;
+	color: #000;
+}
+
+p11{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 22px;
+	color: #000;
+	font-weight: bold;
+}
+
+/*usado em titulos*/
+p2{
+	font-size:30px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-weight: bold;
+}
+
+/*usado no nome dos produtos da parte "na dri-fit tambem tem"*/
+p5{
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+
+/*usado no nome das roupas do compre o look*/
+p3{
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+
+/*usado no preço do compre o look*/
+p4{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-weight: bold;
+}
+	
+/*usado nas fontes do rodapé*/
+p6{
+	font-size:17px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-weight: bold;
+}
+
+p7{
+	font-size:16px;
+	font-family: 'Red Hat Display', sans-serif;
+	color: #fff;
+}
+
+p8{
+	font-size:13px;
+	font-family: 'Red Hat Display', sans-serif;
+	color: #fff;
+}
+
+/*usado no nome dos produtos*/
+p12{
+	font-size:15px;
+	font-family: 'Red Hat Display', sans-serif;
+	color: #000;
+	padding-left: 10px;
+}
+
+/*usado no preço dos produtos*/
+p13{
+	font-size:16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-weight: bold;
+}
+
+/*usado no preço antigo dos produtos*/
+p14{
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	text-decoration: line-through;
+}
+
+/*usado na parcela do preço dos produtos*/
+p15{
+	font-size:14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	font-weight: bold;
+}
+
+/*Pagina individual*/
+/*usado no nome do produto*/
+p16{
+	font-size:26px;
+	color: #000;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/*usado na primeira descrição do produto*/
+p17{
+	font-size:16px;
+	font-family: 'Red Hat Display', sans-serif;
+	color: #000;
+}
+p21{
+	font-size:16px;
+	font-family: 'Red Hat Display', sans-serif;
+	color: #000;
+	font-weight:bold;
+}
+
+/*usado no preço do produto*/
+p18{
+	font-size:30px;
+	font-family: 'Merriweather', sans-serif;
+	color: #F58426;
+	font-weight:bold;
+}
+
+/*usado no tamanho do produto*/
+p19{
+	font-size:16px;
+	font-family: 'Red Hat Display', sans-serif;
+	color: #000;
+}
+
+/*usado no botão comprar*/
+p20{
+	font-size:20px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-weight:bold;
+}
+
+/*usado nos titulos*/
+p22{
+	font-size:22px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-weight:bold;
+}
+
+/*usado no preço antigo dos produtos*/
+p23{
+	font-size:18px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	text-decoration: line-through;
+}
+
+/*institutionais - itens marcados como importante*/
+p24{
+	font-size:15px;
+	font-family: 'Open Sans', sans-serif;
+	color: #f00;
+	font-weight:bold;
+}
+
+/*carrinho de compra*/
+p25{
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+}
+
+/*efeito hover dos links que aparecem o sublinhado quando passa o mouse por cima (parte de login e cadastro)*/
+b:link, a:visited{
+	text-decoration: none
+}
+b:hover{
+	text-decoration: underline; 
+}
+b:active{
+	text-decoration: none
+}
+
+/*efeito hover dos links que aparecem o sublinhado quando passa o mouse por cima(subcategorias do menu)*/
+c:link, a:visited{
+	text-decoration: none
+}
+c:hover{
+	text-decoration: underline; 
+	color: #000;
+}
+c:active{
+	text-decoration: none
+}
+	
+/*tira o sublinhado visivel dos links*/
+a:link{ 
+	text-decoration:none; 
+} 

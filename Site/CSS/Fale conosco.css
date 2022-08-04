@@ -1,0 +1,962 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+/*reset CSS*/
+*, *:after, *:before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* [disabled]font-family: sans-serif; */
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+/*CABEÇALHO*/
+#header{
+	position: relative;
+    width: 1349px;
+	height: 110px;
+	float:left;
+	background-color: #000;
+}
+
+/*logotipo*/
+.logo{
+	position: relative;
+    width: 200px;
+	height: 120px;
+	float:left;
+	margin-left: 50px;
+	background-color: #000;
+}
+
+
+/*Botão de login*/
+.ECbotão{
+	position: relative;
+    width: 50px;
+	height: 50px;
+	float:right;
+	margin-right: 280px;
+	margin-top: 25px;
+	background-color: #000;
+}
+
+/*div que está escrita entre ou cadastre-se*/
+.EC{
+	position: relative;
+    width: 90px;
+	height: 60px;
+	float:left;
+	margin-left: 830px;
+	margin-top: -40px;
+	background-color: #000;
+}
+
+/*carrinho de compra*/
+.carrinho{
+	position: relative;
+    width: 50px;
+	height: 50px;
+	float:left;
+	margin-left: 50px;
+	margin-top: -50px;
+	background-color: #000;
+}
+
+/*BARRA DE PESQUISA*/
+/*caixa de pesquisa*/
+.searchbox input[type="text"] {
+	background: #ffffff;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+    color: #000000;
+    padding: 10px 35px 10px 20px;
+    width: 600px;
+	height: 40px;
+	outline: none;
+	padding: 10px;
+	float:left;
+	margin-left: 110px;
+	margin-top: 35px;
+	border-radius: 5px;
+
+}
+
+/*div e comando que apenas tira o contorno azul da caixa de pesquisa quando é selecionada*/
+.searchbox input{
+	outline:none;
+}
+
+/*botão de pesquisar*/
+.button-submit{
+	background-image:url(../img/lupa.jpg);
+	border-width: 0px;
+	width: 25px; 
+	height: 25px;
+	outline: none;
+	float:left;
+	margin-left: -35px;
+	margin-top: 43px;
+}
+
+
+
+/*MENU*/
+#mainnav{
+	position: relative;
+    width: 1349px;
+	height: 40px;
+	float:left;
+	background-color: #fff;
+}
+
+/*onde fica as outras categorias principais do menu*/
+.menu{
+	position: relative;
+    width: 800px;
+	height: 35px;
+	float:right;
+	margin-right: 240px;
+	top: 7px;
+	background-color: #FFF;
+}
+
+/*imagem que tem no menu*/
+.imgmenu1{
+	position: relative;
+    width: 250px;
+	height: 130px;
+	float: left;
+	margin-left: -70px;
+}
+.imgmenu2{
+	position: relative;
+    width: 250px;
+	height: 130px;
+	float: left;
+	margin-left: -70px;
+	top: 25px;
+	background-image: url(../img/aaaa.png);
+}
+
+/*botão de todas as categorias*/
+.cd-dropdown-wrapper{
+  	display: inline-block;
+  	position: relative;
+  	height: 40px;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	float: left;
+  	margin-left: 50px;
+}
+
+/*configurações do botão de todas as categorias*/
+.cd-dropdown-trigger{
+  	display: block;
+  	position: relative;
+  	padding: 0 35px 0 20px;
+	top: -15px;
+  	line-height: 40px;
+  	background-color: #fff;
+  	color: #000;
+  	border-radius: 3px;
+}
+
+/*configurações da seta que vira X*/
+.cd-dropdown-trigger::before, .cd-dropdown-trigger::after{
+  	content: '';
+  	position: absolute;
+  	top: 50%;
+  	margin-top: -1px;
+  	height: 2px;
+  	width: 9px;
+  	background: #000;
+  	-webkit-backface-visibility: hidden;
+  	backface-visibility: hidden;
+  	-webkit-transition: width 0.3s, -webkit-transform 0.3s;
+  	-moz-transition: width 0.3s, -moz-transform 0.3s;
+  	transition: width 0.3s, transform 0.3s;
+}
+.cd-dropdown-trigger::before{
+  	right: 22px;
+  	-webkit-transform: rotate(45deg);
+  	-moz-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	-o-transform: rotate(45deg);
+  	transform: rotate(45deg);
+}
+.cd-dropdown-trigger::after{
+  	right: 17px;
+  	-webkit-transform: rotate(-45deg);
+  	-moz-transform: rotate(-45deg);
+  	-ms-transform: rotate(-45deg);
+  	-o-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
+}
+  
+/* tamanho do X */
+.cd-dropdown-trigger.dropdown-is-active::before, .cd-dropdown-trigger.dropdown-is-active::after{
+    width: 14px;
+}
+  
+/*transformar a seta em um X*/
+.cd-dropdown-trigger.dropdown-is-active::before{
+    -webkit-transform: translateX(5px) rotate(-45deg);
+    -moz-transform: translateX(5px) rotate(-45deg);
+    -ms-transform: translateX(5px) rotate(-45deg);
+    -o-transform: translateX(5px) rotate(-45deg);
+    transform: translateX(5px) rotate(-45deg);
+}
+.cd-dropdown-trigger.dropdown-is-active::after{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*espaçamento das palavras das categorias*/
+.cd-dropdown h2,
+.cd-dropdown-content a,
+.cd-dropdown-content ul a,
+.cd-dropdown-content .cd-divider{
+  	padding: 0 20px;
+}
+
+/*faz o submenu aparecer*/
+.cd-dropdown{
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-color: #111433;
+  	color: #ffffff;
+  	visibility: hidden;
+/*Forçar aceleração de hardware*/
+  	-webkit-backface-visibility: hidden;
+ 	backface-visibility: hidden;
+  	-webkit-transform: translateZ(0);
+  	-moz-transform: translateZ(0);
+  	-ms-transform: translateZ(0);
+  	-o-transform: translateZ(0);
+  	transform: translateZ(0);
+  	-webkit-transform: translateY(-100%);
+  	-moz-transform: translateY(-100%);
+  	-ms-transform: translateY(-100%);
+  	-o-transform: translateY(-100%);
+  	transform: translateY(-100%);
+  	-webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0.5s;
+  	-moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
+  	transition: transform 0.5s 0s, visibility 0s 0.5s;
+}
+.cd-dropdown.dropdown-is-active{
+  	visibility: visible;
+  	-webkit-transform: translateY(0);
+  	-moz-transform: translateY(0);
+  	-ms-transform: translateY(0);
+  	-o-transform: translateY(0);
+  	transform: translateY(0);
+  	-webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0s;
+  	-moz-transition: -moz-transform 0.5s 0s, visibility 0s 0s;
+  	transition: transform 0.5s 0s, visibility 0s 0s;
+}
+
+/*limita onde o menu abre*/
+@media only screen and (min-width: 1024px){
+.cd-dropdown{
+    position: absolute;
+    top: 25px;
+/*reset style*/
+    height: auto;
+    width: auto;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    background-color: #ffffff;
+    color: #111433;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s;
+}
+
+/*ocultar a palavra titulo e close*/
+.cd-dropdown h2, .cd-dropdown .cd-close{
+	display: none;
+}
+  
+/*ativa o dropdown do menu*/
+.cd-dropdown.dropdown-is-active{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: opacity 0.3s 0s, visibility 0.3s 0s, -webkit-transform 0.3s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0.3s 0s, -moz-transform 0.3s 0s;
+    transition: opacity 0.3s 0s, visibility 0.3s 0s, transform 0.3s 0s;
+}
+
+/*limita o tamanho entre as categorias*/
+.cd-dropdown-content, .cd-dropdown-content ul{
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	overflow-x: hidden;
+  	overflow-y: auto;
+  	-webkit-transition: -webkit-transform 0.3s;
+  	-moz-transition: -moz-transform 0.3s;
+  	transition: transform 0.3s;
+  	padding-top: 50px;
+}
+
+/*configura a linha vertical que aparece na categoria quando passa o mouse*/
+.cd-dropdown-content a, .cd-dropdown-content ul a{
+  	display: block;
+  	color: #ffffff;
+/*trunca texto com reticências se for muito longo*/
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	border-top-width: 1px;
+  	border-color: #242643;
+  	border-style: solid;
+}
+
+/*não deixar um espaço desnecessário quando abre as categorias*/
+@media only screen and (min-width: 1024px) {
+.cd-dropdown-content, .cd-dropdown-content ul{
+    padding-top: 0;
+    overflow: visible;
+}
+  
+/* adicionar um espaço entre as categorias*/
+.cd-dropdown-content a, .cd-dropdown-content ul a{
+    color: #111433;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    border-color: #ebebeb;
+}
+
+/*faz com que as categorias fique em seus lugares*/
+@media only screen and (min-width: 1024px){
+.cd-dropdown-content{
+    position: static;
+    height: auto;
+    width: 250px;
+}
+.cd-dropdown-content .cd-secondary-dropdown, .cd-dropdown-content .cd-dropdown-gallery, .cd-dropdown-content .cd-dropdown-icons{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    left: 100%;
+    height: 330px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+}
+ 
+/*faz com que as subcategorias apareçam do lado das categorias*/
+.cd-dropdown-content .cd-secondary-dropdown.is-hidden, .cd-dropdown-content .cd-dropdown-gallery.is-hidden, .cd-dropdown-content .cd-dropdown-icons.is-hidden{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+  
+/*coloca em ordem os blocos de subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown > .go-back, .cd-dropdown-content .cd-dropdown-gallery > .go-back, .cd-dropdown-content .cd-dropdown-icons > .go-back{
+    display: none;
+}
+  
+/*limita o tamanho do box com o link abaixo das subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown > .see-all, .cd-dropdown-content .cd-dropdown-gallery > .see-all, .cd-dropdown-content .cd-dropdown-icons > .see-all{
+    position: absolute;
+    bottom: 20px;
+    height: 45px;
+    text-align: center;
+}
+  
+/*ocultar as linhas que separam cada subcategoria*/  
+.cd-dropdown-content .cd-secondary-dropdown .cd-dropdown-item, .cd-dropdown-content .cd-secondary-dropdown a, .cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item, .cd-dropdown-content .cd-dropdown-gallery a, .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item, .cd-dropdown-content .cd-dropdown-icons a{
+    border: none;
+}
+  
+/*coloca um box de categoria ao lado do outro para não ficar um embaixo do outro*/
+.cd-dropdown-content .cd-dropdown-icons > li, .cd-dropdown-content .cd-secondary-dropdown > li{
+    width: 50%;
+    float: left;
+}
+  
+/*tamanho do box das subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown{
+    overflow: hidden;
+    width: 480px;
+    padding-bottom: 65px;
+}
+    
+/*configura o titulo das subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown > li > a{
+    color: #000;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    line-height: 30px;
+    height: 30px;
+    pointer-events: none;
+	font-family: 'Red Hat Display', sans-serif;
+	font-weight: bold;
+}
+  
+/*faz com que a seta não apareça no titulo das subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown > li > a::after, .cd-dropdown-content .cd-secondary-dropdown > li > a::before{
+    display: none;
+}
+  
+/*linha horizontal que aparece nas  subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown > li{
+    margin: 20px 0;
+    border-right-width: 1px;
+    border-color: #fff;
+    border-style: solid;
+    padding: 0 30px;
+    height: 110px;
+}
+  
+/*faz o conteudo das subcategorias aparecerem*/
+.cd-dropdown-content .cd-secondary-dropdown > li > ul{
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+    position: relative;
+    height: auto;
+}
+  
+/*ocultar a seta de lugares que ela não deve aparecer*/
+.cd-dropdown-content .cd-secondary-dropdown > li > ul > .go-back{
+    display: none;
+}
+  
+/*espaço entre as linhas das subcategorias*/
+.cd-dropdown-content .cd-secondary-dropdown a{
+    line-height: 25px;
+    height: 25px;
+    font-size: 1.3rem;
+    padding-left: 0;
+}
+  
+/*faz com que as subcategorias apareçam no lugar certo*/
+.cd-dropdown-content .cd-secondary-dropdown ul{
+    padding-bottom: 25px;
+    overflow: hidden;
+    height: auto;
+}
+  
+/*faz o link de todos os produtos de determinada subcategoria aparecer embaixo*/  
+.cd-dropdown-content .cd-secondary-dropdown .see-all{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+   
+/*faz com que as subcategorias fiquem visiveis*/
+.cd-dropdown-content > .has-children > ul{
+    visibility: hidden;
+}
+  
+/*quando passar o mouse sobre itens de conteúdo suspenso mostrar subnavegação*/
+  .cd-dropdown-content > .has-children > ul.is-active{
+    visibility: visible;
+}
+  
+/*se o dropdown secundário estiver visível mostra também subnavegação*/
+.cd-dropdown-content > .has-children > .cd-secondary-dropdown.is-active > li > ul{
+    visibility: visible;
+}
+  
+/*efeito de passar o mouse para itens com conteúdo suspenso com subnavegação*/
+.cd-dropdown-content > .has-children > a.is-active{
+    box-shadow: inset 2px 0 0 #000;
+    color: #000;
+}
+  
+/*cor da seta das subcategorias quando passa o mouse*/
+.cd-dropdown-content > .has-children > a.is-active::before, .cd-dropdown-content > .has-children > a.is-active::after{
+    background: #000;
+}
+
+/*posição da seta que fica nas subcategorias*/
+.has-children > a, .go-back a{
+  	position: relative;
+}
+
+/*faz a seta que fica nas subcategorias aparecer*/
+.has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after{
+  	content: '';
+  	position: absolute;
+  	top: 50%;
+  	margin-top: -1px;
+  	display: inline-block;
+  	height: 2px;
+  	width: 10px;
+  	background: #fff;
+  	-webkit-backface-visibility: hidden;
+  	backface-visibility: hidden;
+}
+
+/*estilo da seta*/
+.has-children > a::before, .go-back a::before{
+  	-webkit-transform: rotate(45deg);
+  	-moz-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	-o-transform: rotate(45deg);
+  	transform: rotate(45deg);
+}
+.has-children > a::after, .go-back a::after{
+  	-webkit-transform: rotate(-45deg);
+  	-moz-transform: rotate(-45deg);
+  	-ms-transform: rotate(-45deg);
+  	-o-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
+}
+
+/*cor da seta das subcategorias*/
+@media only screen and (min-width: 1024px){
+.has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after{
+    background: #CCC;
+}}
+
+/*faz a seta da subcategoria ficar do lado direito*/
+.has-children > a::before, .has-children > a::after{
+  	right: 20px;
+  	-webkit-transform-origin: 9px 50%;
+  	-moz-transform-origin: 9px 50%;
+  	-ms-transform-origin: 9px 50%;
+ 	o-transform-origin: 9px 50%;
+  	transform-origin: 9px 50%;
+}
+
+/*CONTEUDO*/
+#contents{
+	position: relative;
+    width: 1349px;
+	height: 1400px;
+	top: -15px;
+	float:left;
+	background-color: #fff;
+}
+
+.portal{
+	position: relative;
+    width: 1200px;
+	height: 300px;
+	float:left;
+	margin-left: 80px;
+	top: 30px;
+	text-align: center;
+	background-color: #FF0;
+}
+
+.info{
+	position: relative;
+    width: 250px;
+	height: 180px;
+	float:left;
+	margin-left: 120px;
+	top: 50px;
+	text-align: justify;
+	background-color: #FFF;
+	border: 1px solid #D3D3D3;
+	padding: 15px;
+	border-radius: 5px;
+} 
+
+.info2{
+	position: relative;
+    width: 250px;
+	height: 180px;
+	float:left;
+	margin-left: 40px;
+	top: 50px;
+	text-align: justify;
+	border: 1px solid #D3D3D3;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+/*FORMULÁRIO*/
+.cadastro{
+	padding: 20px;
+	position: relative; 
+	width: 1200px;
+	float: left;
+ 	border: 1px solid;
+ 	border-color: #D3D3D3;
+	margin-left: 70px;
+	margin-top: 100px;
+}
+
+.enviar {
+	float: right;
+	margin-top: -15px;
+	margin-right: 10px;
+} 
+
+form, e {
+	font-family: Century Gothic;
+	font-size: 16px;
+	color:black;
+}
+
+input {
+	padding: 10px;
+	color: #000000;
+	border: 1px solid;
+	border:1px solid #8B8989;
+	outline: none;
+	font-family: Century Gothic;
+}
+
+.submit input {
+	border:1px solid #8B8989;
+   	opacity:1;
+	background: black;
+	height:40px;
+	width: 100px;	
+	font-family: Century Gothic;
+	font-size: 18px;
+	color: #EEE5DE;
+	cursor: pointer;
+	float: right;
+	padding: 0px;
+}
+
+d {
+	font-family: Century Gothic; 
+	font-size: 10pt;
+}
+
+/*titulo*/
+.DF{
+	position: relative;
+    width: 1349px;
+	height: 90px;
+	float:left;
+	top: 50px;
+	text-align: center;
+}
+
+/*faz o campo ficar oculto*/
+ul.categorias-content li.categoria ul.subcategorias-content {
+  display: none;
+  padding: 0 0 0 15px;
+}
+
+/*bordas*/
+ul.categorias-content li.categoria{
+  position: relative;
+  padding: 0;
+  border-top: 1px solid #d5d5d5;
+  border-right: 1px solid #d5d5d5;
+  border-bottom: 0px;
+  border-left: 1px solid #d5d5d5;
+  width: 1200px;
+  float: left;
+  margin-left: -240px;
+}
+ul.categorias-content li.categoria:last-child{
+  border-bottom: 1px solid #d5d5d5;
+}
+
+/*define o espaçamento entre as perguntas*/
+ul.categorias-content li.categoria a{
+  text-decoration: none;
+  display: block;
+  color: #000;
+  padding: 15px;
+}
+
+/*faz a seta ficar do lado direito*/
+ul.categorias-content li.categoria a:before {
+  font-size: 35px;
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 8px;
+  text-align: center;
+}
+
+/*faz o campo mudar de cor quando clica*/
+ul.categorias-content li.categoria.active > a {
+  color: #fff;
+  background: #F58426;
+  display: block;
+}
+
+/*seta*/
+ul.categorias-content li.categoria a.seta-direita:before{
+  content: "";
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #6a6c75;
+}
+
+/*seta quando clica na pergunta*/
+ul.categorias-content li.categoria a.seta-baixo.active:before{
+  content: "";
+  display: inline-block;
+  margin-top: 13px;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+}
+
+
+
+/*RODAPÉ*/
+#footer{
+	position: relative;
+    width: 1349px;
+	height: 270px;
+	float:left;
+	padding: 20px;
+	background-color: #000;
+}
+
+/*caixa de informações sobre entrega e pagamento*/
+.caixa{
+	position: relative;
+    width: 1349px;
+	height: 60px;
+	float:left;
+	top: -11px;
+	background-color: #000;
+}
+
+/*coluna 1 do rodapé (formas de pagamento e certificações)*/
+.rodapé1{
+	position: relative;
+    width: 300px;
+	height: 200px;
+	float:left;
+	margin-left: 50px;
+	background-color: #000;
+}
+
+/*coluna 2 do rodapé (institucional e ajuda)*/
+.rodapé2{
+	position: relative;
+    width: 300px;
+	height: 200px;
+	float:left;
+	margin-left: 490px;
+	top: -170px;
+	background-color: #000;
+}
+
+/*coluna 3 do rodapé (cartão presente, redes sociais e app)*/
+.rodapé3{
+	position: relative;
+    width: 310px;
+	height: 200px;
+	float:left;
+	margin-left: 400px;
+	top: -210px;
+	background-color: #000;
+}
+
+/*texto do copyright*/
+.rodapé4{
+	position: relative;
+    width: 1349px;
+	height: 60px;
+	float:left;
+	top: 1px;
+	padding: 10px;
+	background-color: #000;
+}
+
+/*redes sociais*/
+.facebook{
+	position: relative;
+    width: 35px;
+	height: 35px;
+	float:left;
+	top: 5px;
+	border-radius: 40px;
+	background-image: url(../img/facebook.jpg)
+}
+.facebook:hover{
+	background-image: url(../img/facebookH.jpg)
+}
+
+.instagram{
+	position: relative;
+    width: 35px;
+	height: 35px;
+	float:left;
+	margin-left: 15px;
+	top: 5px;
+	border-radius: 40px;
+	background-image: url(../img/instagram.jpg)
+}
+.instagram:hover{
+	background-image: url(../img/instagramH.jpg)
+}
+
+.twitter{
+	position: relative;
+    width: 35px;
+	height: 35px;
+	float:left;
+	margin-left: 15px;
+	top: 5px;
+	border-radius: 40px;
+	background-image: url(../img/twitter.jpg)
+}
+.twitter:hover{
+	background-image: url(../img/twitterH.jpg)
+}
+
+
+
+/*SELETORES DAS FONTES*/
+/*usado em entre ou cadastre-se*/
+p1{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;	
+}
+
+/*usado no menu para as demais categorias do menu principal*/
+p9{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 18px;
+	color: #666;
+}
+p9:hover{
+	color: #000;  
+}
+
+p10{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 18px;
+	color: #000;
+}
+
+p11{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 22px;
+	color: #000;
+	font-weight: bold;
+}
+
+/*usado em titulos*/
+p2{
+	font-size:30px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-weight: bold;
+}
+	
+/*usado nas fontes do rodapé*/
+p6{
+	font-size:17px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-weight: bold;
+}
+
+p7{
+	font-size:16px;
+	font-family: 'Red Hat Display', sans-serif;
+	color: #fff;
+}
+
+p8{
+	font-size:13px;
+	font-family: 'Red Hat Display', sans-serif;
+	color: #fff;
+}
+
+/*usado no texto*/
+p13{
+	font-size:18px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-weight: bold;
+}
+p19{
+	font-size:16px;
+	font-family: 'Red Hat Display', sans-serif;
+	color: #000;
+}
+p20{
+	font-size:16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+/*usado nos titulos*/
+p22{
+	font-size:22px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-weight:bold;
+}
+/*efeito hover dos links que aparecem o sublinhado quando passa o mouse por cima (parte de login e cadastro)*/
+b:link, a:visited{
+	text-decoration: none
+}
+b:hover{
+	text-decoration: underline; 
+}
+b:active{
+	text-decoration: none
+}
+
+/*efeito hover dos links que aparecem o sublinhado quando passa o mouse por cima(subcategorias do menu)*/
+c:link, a:visited{
+	text-decoration: none
+}
+c:hover{
+	text-decoration: underline; 
+	color: #000;
+}
+c:active{
+	text-decoration: none
+}
+	
+/*tira o sublinhado visivel dos links*/
+a:link{ 
+	text-decoration:none; 
+} 
